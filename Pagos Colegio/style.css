@@ -1,0 +1,167 @@
+/* ===========================
+   🎨 PALETA RIADIGOS
+   =========================== */
+
+:root {
+  --verde-riadigos: #11C5AE;
+  --verde-oscuro: #0fae9a;
+  --verde-claro: #c9f6ef;
+  --texto-oscuro: #0f172a;
+  --gris-fondo: #f5fafa;
+  --blanco: #ffffff;
+}
+
+/* ===========================
+   📌 BASE GENERAL
+   =========================== */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: var(--gris-fondo);
+  color: var(--texto-oscuro);
+}
+
+/* ===========================
+   🧭 ENCABEZADO SUPERIOR
+   =========================== */
+
+.encabezado-superior {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 45px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.titulo-izq {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--verde-oscuro);
+}
+
+.titulo-der {
+  font-family: "Georgia", serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--verde-riadigos);
+  letter-spacing: 1px;
+}
+
+.titulo-central {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--texto-oscuro);
+}
+
+/* ===========================
+   📦 CONTENEDOR PRINCIPAL
+   =========================== */
+
+.container {
+  background: var(--blanco);
+  width: 380px;
+  margin: 130px auto;
+  padding: 45px 35px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.10);
+  text-align: center;
+  border-top: 6px solid var(--verde-riadigos);
+}
+
+/* ===========================
+   🔘 BOTONES (ESTILO RIADIGOS)
+   =========================== */
+
+button {
+  width: 100%;
+  padding: 15px;
+  margin: 12px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  background: var(--verde-riadigos);
+  color: white;
+  cursor: pointer;
+  transition: 0.20s ease;
+  box-shadow: 0 3px 12px rgba(17, 197, 174, 0.25);
+}
+
+button:hover {
+  background: var(--verde-oscuro);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 18px rgba(17, 197, 174, 0.35);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+
+.pie-pagina {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.btn-reporte {
+  background: var(--verde-claro);
+  color: var(--texto-oscuro);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 25px;
+  border-radius: 10px;
+  border: 2px solid var(--verde-riadigos);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-reporte:hover {
+  background: var(--verde-riadigos);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(17, 197, 174, 0.35);
+}
+
+.btn-reporte:active {
+  transform: scale(0.97);
+}
+
+/* ======================================================
+   🔙 BOTÓN VOLVER (diferenciado)
+   ====================================================== */
+
+.volver-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.btn-volver {
+  padding: 12px 25px;
+  background: transparent;
+  color: var(--verde-oscuro);
+  border: 2px solid var(--verde-oscuro);
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.btn-volver:hover {
+  background: var(--verde-oscuro);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.btn-volver:active {
+  transform: scale(0.97);
+}
